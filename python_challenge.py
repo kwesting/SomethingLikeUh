@@ -46,11 +46,12 @@ favorite_cars = [
     }
 ]
 
-def price_finder(car_info):
-
+def price_finder(cars):
 
     for car in favorite_cars:
-        print(car["price"])
-
+        
+        if car["price"] > 100000:
+            print(car["make"])
+    
 
 price_finder(favorite_cars)
